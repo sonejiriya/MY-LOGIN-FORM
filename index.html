@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="slideshow-container">
+     
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="..\Login Form\images\2.jpg" style="width:100%">
+      <div class="text">Chocolate</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="..\Login Form\images\cheesecake.jpg" style="width:100%">
+      <div class="text">Cheesecake</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="..\Login Form\images\Doughnut1.jpg"style="width:100%">
+      <div class="text">Doughnut</div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span>  
+      <span class="dot"></span> 
+    </div>
+
+   </div>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <span class="show-password" onclick="togglePassword()">Show</span>
+      </div>
+      <button type="submit" class="login-button">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#">Create New Account</a></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
