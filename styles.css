@@ -12,6 +12,7 @@ body {
     display: flex;
     max-width: 800px;
     overflow: hidden;
+    transition: transform 0.2s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fff;
   }
@@ -83,6 +84,17 @@ img {vertical-align: middle;}
   }
   .form-container h2 {
     margin-bottom: 20px;
+    color: #0056b3;
+    text-align: center;
+  }
+  .form-container p
+  {
+    text-align: initial;
+    font-size: small;
+  }
+  .form-container p a
+  {
+    text-decoration: none;
   }
   .form-group {
     margin-bottom: 20px;
@@ -90,6 +102,7 @@ img {vertical-align: middle;}
   .form-group label {
     display: block;
     margin-bottom: 5px;
+    color:black;
   }
   .form-group input {
     width: 100%;
@@ -97,11 +110,13 @@ img {vertical-align: middle;}
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  
   .show-password {
     cursor: pointer;
-    margin-left:25px;
-    position:center;
-    top:30px;
+    transform: translateY(-50%);
+    position:absolute;
+    top:50%;
+    right: 10px;
   }
   .login-button {
     text-align: center;
@@ -115,3 +130,21 @@ img {vertical-align: middle;}
   .login-button:hover {
     background-color: #0056b3;
   }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        display: block;
+        float: none;
+        flex-direction: column;
+
+    }
+    .form-container
+    {
+      float: right;
+      margin: 30px 0;
+      padding:0px;
+      display: block;
+      width: 100%;
+    }
+}
